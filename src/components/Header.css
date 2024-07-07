@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px; 
-  background-color: white;
+  padding: 10px 40px;
+  background-color: rgb(70, 73, 53);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -13,7 +13,7 @@
 }
 
 .logo {
-  width: 40px; 
+  width: 40px;
   margin-right: 10px;
 }
 
@@ -27,12 +27,13 @@ nav ul {
 
 nav ul li {
   cursor: pointer;
+  color: #ffffff;
 }
 
 .auth-buttons {
   display: flex;
   gap: 10px;
-  margin-left: 20px; 
+  margin-left: 20px;
 }
 
 button {
@@ -50,4 +51,61 @@ button {
 .signup {
   background-color: #EDEDED;
   color: black;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu.open {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(70, 73, 53);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+
+  .nav-menu.open + .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
 }
