@@ -11,7 +11,7 @@ const MainContent = () => {
         <div className="text">
           <h1>Site em Construção</h1>
           <p>Entre em contato conosco, clique no botão abaixo.</p>
-          <a href='https://wa.me/5566996555525?text=Ol%C3%A1.%20Gostaria%20de%20ter%20meu%20pr%C3%B3prio%20Sistema%2FAplicativo.' target="_blank"><button className='fale-conosco'>Fale Conosco</button></a>
+          <a href='https://wa.me/5566996555525?text=Ol%C3%A1.%20Gostaria%20de%20ter%20meu%20pr%C3%B3prio%20Sistema%2FAplicativo.' target="_blank"><button className='button'>Fale Conosco</button></a>
         </div>
       </div>
       <div className="second-section">
@@ -29,7 +29,7 @@ const MainContent = () => {
         <div className="text">
           <h1>Procure uma ideia</h1>
           <p>O que você quer experimentar agora? Procure algo de seu interesse, como "receitas práticas de frango para o jantar", e veja o que aparece.</p>
-          <button className='fale-conosco'>Explorar</button>
+          <button className='button'>Explorar</button>
         </div>
       </div>
     </main>

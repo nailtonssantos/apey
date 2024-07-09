@@ -17,6 +17,10 @@
   margin-right: 10px;
 }
 
+.logo:hover {
+  transform: scale(1.20);
+}
+
 nav ul {
   display: flex;
   list-style: none;
@@ -28,6 +32,10 @@ nav ul {
 nav ul li {
   cursor: pointer;
   color: #ffffff;
+}
+
+li:hover {
+  transform: scale(1.05);
 }
 
 .auth-buttons {
@@ -58,6 +66,11 @@ button {
   flex-direction: column;
   cursor: pointer;
   margin-left: 20px;
+}
+
+.hamburger-menu:hover {
+  transform: scale(1.20);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .hamburger-menu .bar {
